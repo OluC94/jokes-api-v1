@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "setup": "How would you describe a male ant that floats?",
+        "punchline": "Bouyant"
+    },
+    {
+        "id": 2,
+        "setup": "",
+        "punchline": "I got back from the hospital and the doctor told us that my wife is eating for two now (she has a tapeworm)"
+    },
+    {
+        "id": 3,
+        "setup": "How many software engineers does it take to change a lightbulb",
+        "punchline": "Three. One to hold the lightbulb and two to spin the ladder"
+    },
+    {
+        "id": 4,
+        "setup": "",
+        "punchline": "Time flies like an arrow. Fruit flies like a banana"
+    },
+    {
+        "id": 5,
+        "setup": "A policy officer caught two kids playing with a firework and a car battery.",
+        "punchline": "He charged one and let the other off."
+    },
+    {
+        "id": 7,
+        "setup": "What do you call fake spaghetti?",
+        "punchline": "An impasta."
+    },
+    {
+        "id": 10,
+        "setup": "What do you get when you cross a snowman and a vampire?",
+        "punchline": "Frostbite."
+    }
+]

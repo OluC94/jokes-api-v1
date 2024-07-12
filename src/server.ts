@@ -10,6 +10,7 @@ import {
     updateDbItemById,
 } from "./db";
 import filePath from "./filePath";
+import jokes from "./data/jokes.json";
 
 // loading in some dummy items into the database
 // (comment out if desired, or change the number)
@@ -34,6 +35,10 @@ app.get("/", (req, res) => {
     const pathToFile = filePath("../public/index.html");
     res.sendFile(pathToFile);
 });
+
+app.get("/jokes", (req, res) => {
+    res.status(200).json(jokes)
+})
 
 // GET /items
 app.get("/items", (req, res) => {
