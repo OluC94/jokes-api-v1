@@ -11,6 +11,7 @@ import {
 } from "./db";
 import filePath from "./filePath";
 import jokes from "./data/jokes.json";
+// import { getAllJokes } from "./utils/utils";
 
 // loading in some dummy items into the database
 // (comment out if desired, or change the number)
@@ -37,8 +38,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/jokes", (req, res) => {
-    res.status(200).json(jokes)
-})
+    res.status(200).json(jokes);
+});
 
 // GET /items
 app.get("/items", (req, res) => {
