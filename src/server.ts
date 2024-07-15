@@ -11,6 +11,7 @@ import {
 } from "./db";
 import filePath from "./filePath";
 import jokes from "./data/jokes.json";
+import { getJokeById } from "./utils/utils";
 // import { getAllJokes } from "./utils/utils";
 
 // loading in some dummy items into the database
@@ -40,6 +41,16 @@ app.get("/", (req, res) => {
 app.get("/jokes", (req, res) => {
     res.status(200).json(jokes);
 });
+
+app.get<{ id: string }>("/jokes/:id", (req, res) => {
+    const targetId = parseInt(req.params.id)
+    const targetJoke = getJokeById(targetId)
+    if (targetJoke === "not found") {
+        res.status(404).send({error: "joke not found"})
+        return
+    }
+    res.status(200).json(targetJoke)
+})
 
 // GET /items
 app.get("/items", (req, res) => {

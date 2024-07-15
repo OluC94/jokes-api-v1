@@ -14,3 +14,7 @@ const jokeData: JokeWithId[] = [...jokes];
 export const getAllJokes = (): JokeWithId[] => {
     return jokeData;
 };
+
+export const getJokeById = (id: number): JokeWithId | "not found"=> {
+    return jokeData.find(joke => joke.id === id) ?? "not found"
+}
